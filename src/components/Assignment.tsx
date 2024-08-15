@@ -50,15 +50,16 @@ const Assignment = () => {
 
     return (
         <main className='lg:w-1/2 md:w-2/3 w-[80%] p-6 mx-auto my-10 rounded bg-gray-700'>
-            <div className='flex justify-between items-center px-2'>
-                <span className='text-lg font-semibold text-white'>Limit: 150</span>
+            
+            <div className=' flex justify-between items-center px-2'>
+                <span className='font-semibold text-white bg-gray-800 text-sm px-2 py-1 rounded'>Max: 150</span>
                 <span className='text-xl flex gap-2'>
                     <button onClick={undo} className='text-white'><IoArrowUndo /></button>
                     <button onClick={redo} className='text-white'><IoArrowRedo /></button>
                 </span>
             </div>
 
-            <div className='my-4'>
+            <div className='my-4 mt-8'>
                 <Progress value={(number / 150) * 100} />
             </div>
 
@@ -68,14 +69,14 @@ const Assignment = () => {
 
             <div className='w-full flex items-center justify-between'>
                 <button
-                    className="px-4 py-3 rounded-full  bg-gray-600  text-white shadow-lg hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500 active:scale-95 transition-transform duration-150 mr-3"
+                    className="px-4 py-3 rounded-full  bg-gray-600  text-white shadow-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-teal-500 active:scale-95 transition-transform duration-150 mr-3"
                     onClick={decrement}
                 >
                     <FaMinus />
                 </button>
 
                 <button
-                    className="px-4 py-3 rounded-full text-white bg-gray-500 shadow-lg hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 active:scale-95 transition-transform duration-150 ml-3"
+                    className="px-4 py-3 rounded-full text-white bg-gray-800 shadow-lg hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-teal-500 active:scale-95 transition-transform duration-150 ml-3"
                     onClick={increment}
                 >
                     <FaPlus />
